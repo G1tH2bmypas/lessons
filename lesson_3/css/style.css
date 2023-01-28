@@ -1,0 +1,54 @@
+@import url("reset.css");
+
+div {
+	color: dimgray;
+}
+
+.struggle {
+	color: red;
+}
+
+#time {
+	color: orange;
+}
+
+a {
+	color: green;
+}
+
+div.history {
+	color: cornflowerblue;
+}
+
+.history_struggle,
+.history_year {
+	color: green;
+}
+
+.popular_turkey.popular_italy {
+	color: blueviolet;
+}
+
+.rules p {
+	color: chartreuse;
+}
+
+.rules .rules_text {
+	color: red;
+}
+
+.technics * {
+	color: yellow;
+}
+
+.reasons_sportmans ~ p {
+	color: orange;
+}
+
+.reasons_youth + p {
+	color: green;
+}
+
+[class*="_warning"] {
+	 color: blue;
+}
