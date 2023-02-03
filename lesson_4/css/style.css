@@ -1,0 +1,118 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,700;1,500&display=swap');
+
+@font-face {
+	font-family: 'Regime';
+	src: url('../font/Regime-Medium.woff2') format('woff2'),
+	url('../font/Regime-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Regime';
+	src: url('../font/Regime-Bold.woff2') format('woff2'),
+	url('../font/Regime-Bold.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Regime';
+	src: url('../font/Regime-Regular.woff2') format('woff2'),
+	url('../font/Regime-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	font-size: 16px;
+}
+
+div.header_container,
+div.definition {
+	font-family: "Cormorant", sans-serif;
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: 700;
+	text-shadow: 2px 2px 3px goldenrod;
+	text-align: center;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 22px;
+	color: rgba(95, 158, 160, 0.9);
+	text-shadow: 2px 2px 3px cadetblue;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+div.header_container > p {
+	font-size: 22px;
+	font-weight: 500;
+}
+
+div.header_container > ul > li {
+	font-size: 16px;
+	font-weight: 400;
+	font-style: italic;
+}
+
+div.definition > p {
+	text-align: justify;
+	text-transform: capitalize;
+	text-indent: 20px;
+}
+
+div.definition > p > span {
+	font-weight: 700;
+}
+
+div.american {
+	font-family: "Caveat" , sans-serif;
+}
+
+div.american > p {
+	font-weight: 500;
+	text-decoration: underline;
+	text-align: right;
+	text-transform: lowercase;
+	word-spacing: 10px;
+}
+
+.american_liga {
+	font-weight: 400;
+	font-style: oblique;
+}
+
+div.japan {
+	font-family: "Regime" , sans-serif;
+}
+
+div.japan > p {
+	text-decoration: overline;
+	text-align: center;
+	letter-spacing: 10px;
+	white-space: nowrap;
+}
+
+.japan_definition {
+	font-weight: 500;
+}
+
+.japan_organizations {
+	font-weight: 400;
+}
+
+div.disciplines > p {
+	text-decoration: line-through;
+	line-height: 1.7;
+	white-space: normal;
+}
