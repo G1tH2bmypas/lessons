@@ -1,0 +1,100 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
+
+.vence {
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 1.78;
+	color: #6C757D;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+[class*="container"] {
+	margin: 0 auto;
+	max-width: 1270px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+[class*="-tittle"] {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6;
+	color: #212529;
+	margin-bottom: 40px;
+	max-width: 605px;
+}
+[class*="text-box"] {
+	max-width: 816px;
+	margin: 0 auto 80px;
+}
+[class*="text-box"] > p {
+	margin-bottom: 30px;
+}
+img {
+	width: 100%;
+	margin-bottom: 80px;
+}
+[class*="img-box"] {
+	font-size: 0;
+}
+[class*="img-box"] > img {
+	max-width: 605px;
+}
+.vence_image {
+	margin-right: 30px;
+}
+.full_size {
+	width: 100%;
+	margin-bottom: 100px;
+}
+[class*="aron"] {
+	margin-bottom: 100px;
+}
+[class*="aron"] > img {
+	margin-bottom: 0;
+}
+
+[class*="test"] {
+	margin: 50px auto;
+}
+.test_block {
+	display: block;
+	border-top: 5px solid yellow;
+	border-bottom: 2px dashed red;
+	border-left: 3px dotted orange;
+	border-right: 4px double green;
+	box-shadow: inset 2px 0 10px 5px black;
+}
+.test_inline {
+	display: inline;
+	line-height: 35px;
+	border-top: 5px solid yellow;
+	border-bottom: 2px dashed red;
+	border-left: 3px dotted orange;
+	border-right: 4px double green;
+	box-shadow: 3px 4px 10px 5px black;
+}
+.test_border {
+	border: 6px solid green;
+}
+.test_outline {
+	outline: 7px solid orange;
+}
+.test_color-block {
+	background: blue;
+	width: 300px;
+	height: 100px;
+	border-radius: 30%;
+	opacity: 0.7;
+}
+.test_block-hidden {
+	background: green;
+	width: 300px;
+	height: 100px;
+	border-radius: 30%;
+	visibility: hidden;
+}
+
+
