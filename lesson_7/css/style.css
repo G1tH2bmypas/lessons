@@ -1,0 +1,160 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+header {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 1.7;
+	color: #E5E5E5;
+}
+.header_container {
+	background-image: url("../img/1.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+.header_text-box {
+	max-width: 1240px;
+	padding: 330px 100px 100px;
+}
+.header_text-box > p {
+	margin-bottom: 15px;
+}
+.header_tittle {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6;
+	color: #F8F9FA;
+}
+.list_container {
+	padding: 40px 135px;
+	background: rgb(22,22,22);
+	background: linear-gradient(63deg, rgba(22,22,22,1) 0%, rgba(24,24,24,1) 33%, rgba(27,27,27,1) 61%, rgba(51,51,51,1) 100%);
+}
+.list_container > p {
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 1.1;
+	color: #212B36;
+	margin-bottom: 15px;
+}
+ul {
+	margin-bottom: 10px;
+}
+ul > li {
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 2;
+	color: #637381;
+	padding-left: 30px;
+	background-repeat: no-repeat;
+	background-position: 0;
+}
+.list_point-mark > li {
+	background-image: url("../img/mark.png")
+}
+.list_blue-mark > li {
+	background-image: url("../img/blue_mark.png");
+}
+.list_green-mark > li {
+	background-image: url("../img/green_mark.png");
+}
+.list_red-mark > li {
+	background-image: url("../img/red_negative_mark.png");
+}
+.list_arrow-mark > li {
+	background-image: url("../img/arrow-mark.png");
+}
+.list_star-mark > li {
+	background-image: url("../img/star_mark.png");
+}
+.speaker_container {
+	height: 560px;
+	background-image: url("../img/HeroArea.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+.speaker_box {
+	padding: 145px 135px 146px;
+	font-family: 'Inter', sans-serif;
+}
+.speaker_cost {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.4;
+	color: #3056D3;
+	margin-bottom: 13px;
+}
+.speaker_tittle {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.3;
+	color: #212B36;
+	margin-bottom: 15px;
+}
+.speaker_text {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #637381;
+	margin-bottom: 35px;
+}
+.speaker_button {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #FFFFFF;
+	width: 139px;
+	height: 44px;
+	border-radius: 30px;
+	background: #3056D3;
+	padding-top: 10px;
+	padding-left: 29px;
+}
+
+.test-container {
+	width: 1440px;
+}
+.background-box {
+	width: 300px;
+	height: 250px;
+	background-color: #212B36;
+	margin: 20px auto;
+}
+.background_img {
+	background-image: url("../img/green_mark.jpg");
+	background-repeat: no-repeat;
+	background-position: 50%;
+	width: 1200px;
+	height: 100px;
+	margin: 20px auto;
+}
+.background_mark {
+	background-image: url("../img/green_mark.jpg");
+	background-repeat: repeat;
+	width: 1200px;
+	height: 300px;
+	margin: 20px auto;
+}
+.background_mark-y {
+	background-image: url("../img/green_mark.jpg");
+	background-repeat: repeat-y;
+	background-position: center;
+	width: 1200px;
+	height: 300px;
+	margin: 20px auto;
+}
+.background_mark-x {
+	background-image: url("../img/green_mark.jpg");
+	background-repeat: repeat-x;
+	width: 1200px;
+	height: 300px;
+	margin: 20px auto;
+}
+
