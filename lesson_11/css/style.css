@@ -1,0 +1,256 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+body {
+	background: #637381;
+}
+.header {
+	position: sticky;
+	top: 0;
+	background: #FFFFFF;
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	line-height: 24px;
+	color: #637381;
+}
+[class*="container"] {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.header__container {
+	max-height: 100px;
+	margin-bottom: 50px;
+}
+.header__container > div {
+	display: inline-block;
+}
+.header__logo {
+	position: relative;
+	top: -13px;
+	margin-right: 45px;
+}
+.header__logo-img {
+	width: 160px;
+	height: 40px;
+}
+.header__menu {
+
+}
+.menu__drop-list {
+	display: inline-block;
+	padding-top: 29px;
+	padding-bottom: 29px;
+	margin-right: 45px;
+}
+.menu__drop-list:hover .menu__sub-menu {
+	transition: all 0.3s;
+	opacity: 4;
+	visibility: visible;
+	pointer-events: all;
+}
+.menu__bottom-arrow {
+	padding: 9px 20px;
+	font-weight: 600;
+	color: #212B36;
+	cursor: pointer;
+}
+.menu__bottom-arrow:hover {
+	background: #F4F7FF;
+	border-radius: 5px;
+}
+[class*="bottom-arrow"]::after {
+	content: " ";
+	background: url("../img/item_list.svg");
+	position: relative;
+	display: inline-block;
+	width: 11px;
+	height: 6px;
+	left: 13px;
+	top: -2px;
+}
+.menu__sub-menu {
+	position: absolute;
+	background: #FFFFFF;
+	border: 1px solid #E7E7E7;
+	border-radius: 5px;
+	padding: 22px 24px;
+	top: 110px;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+.menu__sub-menu::before {
+	content: " ";
+	display: inline-block;
+	position: absolute;
+	background: url("../img/Polygon 18.svg") no-repeat;
+	width: 37px;
+	height: 20px;
+	top: -11px;
+}
+.menu__sub-menu::after {
+	content: " ";
+	display: inline-block;
+	position: absolute;
+	width: 170px;
+	height: 40px;
+	top: -20px;
+	left: 0;
+}
+.menu__sub-menu > li:hover {
+	color: #3056D3;
+}
+.menu__sub-menu > li:not(:last-child) {
+	margin-bottom: 13px;
+}
+.menu__sub-menu > li:nth-child(1) {
+	margin-bottom: 17px;
+}
+[class*="right-arrow"]::after {
+	content: " ";
+	background: url("../img/right_arrow.svg");
+	position: relative;
+	display: inline-block;
+	width: 5px;
+	height: 10px;
+	left: 67px;
+}
+.menu__sub-menu-sub {
+	position: absolute;
+	background: #FFFFFF;
+	border: 1px solid #E7E7E7;
+	border-radius: 5px;
+	padding: 30px;
+	left: 168px;
+	top: 25px;
+	width: 652px;
+	height: 308px;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: all 0.3s;
+	color: #637381;
+}
+.menu__sub-menu-sub:before {
+	content: " ";
+	display: inline-block;
+	position: absolute;
+	width: 170px;
+	height: 20px;
+	top: 38px;
+	left: -45px;
+}
+.menu__sub-menu-sub > div {
+	display: inline-block;
+}
+
+.menu__colum-tittle {
+	color: #212B36;
+	margin-bottom: 20px;
+}
+[class*="menu__colum-"] > li:not(:last-child) {
+	margin-bottom: 12px;
+}
+[class*="menu__colum-"] > li:hover {
+	color: #3056D3;
+}
+.menu__colum-new {
+	margin-right: 80px;
+}
+.menu__colum-trending {
+	margin-right: 69px;
+}
+.menu__colum-img {
+	position: relative;
+	top: -75px;
+	width: 220px;
+	height: 248px;
+	background-image: url('../img/sale.webp');
+	border-radius: 4px;
+	padding: 65px 45px;
+}
+.menu__colum-img img {
+	opacity: 30%;
+}
+.menu__colum-text-block {
+	max-width: 128px;
+	max-height: 118px;
+	margin: auto;
+	text-align: center;
+	color: #FFFFFF;
+}
+.menu__colum-text-sale {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	text-shadow: 0 1px 5px rgba(0, 0, 0, 0.22);
+}
+.menu__colum-text-tittle {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	text-shadow: 0 1px 5px rgba(0, 0, 0, 0.24);
+	margin-bottom: 21px;
+}
+.menu__colum-button {
+	padding: 5px 7px 7px 8px;
+	background: #3056D3;
+	margin: 0 auto;
+	max-width: 83px;
+	font-weight: 700;
+	font-size: 11px;
+	line-height: 13px;
+	text-shadow: 0 1px 5px rgba(0, 0, 0, 0.14);
+	border-radius: 2px;
+	cursor: pointer;
+}
+.menu__right-arrow:hover .menu__sub-menu-sub {
+	transition: all 0.3s;
+	opacity: 4;
+	visibility: visible;
+	pointer-events: all;
+}
+.menu__list {
+	display: inline-block;
+	font-weight: 600;
+	line-height: 19px;
+	color: #212B36;
+}
+.menu__list > * {
+	display: inline-block;
+}
+.menu__list >li {
+	margin-right: 35px;
+}
+.menu__list >li:last-child {
+	margin-right: 255px;
+}
+.menu__list > li:not(:nth-child(3)):hover {
+	color: #3056D3;
+}
+.menu__bottom-arrow--right:after {
+	left: 7px;
+}
+.header__tools-list > li {
+	display: inline-block;
+}
+.header__tools-list > li:nth-child(1) {
+	position: relative;
+	margin-right: 20px;
+	top: 5px;
+}
+.header__tools-list > li:nth-child(2) {
+	margin-right: 13px;
+}
+.main__container {
+
+}
