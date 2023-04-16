@@ -1,0 +1,101 @@
+@import url("reset.css");
+@import url("header.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/*.wrapper {*/
+/*	overflow: clip;*/
+/*	min-height: 100%;*/
+/*}*/
+body {
+	background: rgb(106,114,111);
+	background: linear-gradient(241deg, rgba(106,114,111,1) 4%, rgba(99,99,99,1) 96%);
+	font-family: "Inter", sans-serif;
+	color: white;
+}
+.main {
+	width: 100%;
+	height: 100%;
+}
+.main__container {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 10px 15px;
+}
+.object__box {
+	max-width: 100%;
+	max-height: 130px;
+	padding: 20px;
+	border: 2px solid white;
+	border-radius: 15px;
+}
+.object__box:not(:last-child) {
+	margin-bottom: 10px;
+}
+.object__box div {
+	display: inline-block;
+}
+[class*="object__item"] {
+	width: 70px;
+	height: 70px;
+	background-color: #333333;
+	padding: 27px 0;
+	text-align: center;
+	font-size: 12px;
+	margin-right: 30px;
+	transition: all 0.5s;
+	user-select: none;
+}
+.object__text {
+	max-width: 780px;
+}
+.object__item--translate:hover {
+	transform: translate(10px, 10px);
+	transition: all 0.3s;
+}
+.object__item--scale:hover {
+	transform: scale(0.8);
+}
+.object__item--rotate:hover {
+	transform: rotate(180deg);
+}
+.object__item--skew:hover {
+	transform: skew(20deg, 10deg);
+}
+.object__item--matrix:hover {
+	transform: translate(10px, -10px) scale(0.5) rotate(-45deg);
+}
+.object__item--transform-origin:hover {
+	transform-origin: 70px 70px;
+	transform: rotate(45deg);
+}
+.object__item--translate3D:hover {
+	transform: translate3d(5px, 10px, 5px);
+}
+.object__item--scale3d:hover {
+	transform: scale3d(2, 2, 2);
+}
+.object__item--rotate3d:hover {
+	transform: rotate3d(1, 1, 1, 45deg);
+}
+.perspective {
+	perspective-origin: 35px;
+	perspective: 400px;
+}
+.object__item-perspective:hover {
+	transform: rotateX(60deg);
+}
+.transform-style {
+	transform-style: preserve-3d;
+	perspective-origin: 35px;
+	perspective: 400px;
+}
+.object__item--transform-style:hover {
+	transform: rotateY(50deg);
+}
+.object__item--blackface-visibility:hover {
+	transform: rotateX(180deg);
+	backface-visibility: visible;
+}
+
+
