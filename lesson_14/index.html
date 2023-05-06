@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<title>lesson_14</title>
+</head>
+	<body>
+		<div class="wrapper">
+			<header class="wrapper__header header">
+				<div class="header">
+					<div class="header__container">
+						<div class="header__menu">
+							<ul class="header__menu-list">
+								<li><a href="index.html">Відпрацювання</a></li>
+								<li><a href="page.html">Vence</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="wrapper__main main">
+				<div class="main">
+					<div class="main__container">
+						<div class="main__box flex-wrap">
+							<div class="main__tittle">
+								<h2>Flex-wrap</h2>
+								<p> Визначає, чи зможуть flex-елементи переміщатися на
+									наступні рядки, коли перестають поміщатися всередині flex-контейнера.</p>
+							</div>
+							<div class="main__block">
+								<div class="main__object flex-nowrap">
+									<div class="main__item">1</div>
+									<div class="main__item">2</div>
+									<div class="main__item">3</div>
+									<div class="main__item">4</div>
+									<div class="main__item">5</div>
+								</div>
+								<div class="main__text">
+									<span class="properties">flex-wrap: </span><span class="value">nowrap;</span> - (за замовченням)
+									Flex-елементи не можуть переміщатися на наступні рядки flex-контейнера.
+								</div>
+							</div>
+							<div class="main__block">
+								<div class="main__object flex_wrap">
+									<div class="main__item">1</div>
+									<div class="main__item">2</div>
+									<div class="main__item">3</div>
+									<div class="main__item">4</div>
+								</div>
+								<div class="main__text">
+									<span class="properties">flex-wrap: </span><span class="value">wrap;</span> - Flex-елементи зможуть переміщатися на
+									наступні рядки flex-контейнера.
+								</div>
+							</div>
+							<div class="main__block">
+								<div class="main__object flex-wrap_reverse">
+									<div class="main__item">1</div>
+									<div class="main__item">2</div>
+									<div class="main__item">3</div>
+									<div class="main__item">4</div>
+								</div>
+								<div class="main__text">
+									<span class="properties">flex-wrap: </span><span class="value">wrap-reverse;</span> - Flex-елементи зможуть переміщатися
+									на наступні рядки flex-контейнера, але у зворотному порядку.
+								</div>
+							</div>
+						</div>
+						<div class="main__box justify-content">
+							<div class="main__tittle">
+								<h2>Justify-content</h2>
+								<p>Визначає вирівнювання вздовж основної осі
+									(напрямок залежить від значення властивості flex-direction).</p>
+							</div>
+							<div class="main__block">
+								<div class="main__object flex-start">
+									<div class="main__item">1</div>
+									<div class="main__item">2</div>
+									<div class="main__item">3</div>
+								</div>
+								<div class="main__text">
+									<span class="properties">justify-content: </span><span class="value">flex-start;</span> - Значення за промовчанням (не потрібно вказувати).
+									Flex-елементи притискаються до початку осі.
+								</div>
+							</div>
+							<div class="main__block">
+								<div class="main__object flex-end">
+									<div class="main__item">1</div>
+									<div class="main__item">2</div>
+									<div class="main__item">3</div>
+								</div>
+								<div class="main__text">
+									<span class="properties">justify-content: </span><span class="value">flex-end;</span> - Flex-елементи притискаються вкінець осі.
+								</div>
+							</div>
+							<div class="main__block">
+								<div class="main__object space-between">
+									<div class="main__item">1</div>
+									<div class="main__item">2</div>
+									<div class="main__item">3</div>
+								</div>
+								<div class="main__text">
+									<span class="properties">justify-content: </span><span class="value">space-between</span> - Flex-елементи розміщуються
+									поступово по основній осі.
+									Перший елемент знаходиться на початку осі, останній елемент знаходиться наприкінці осі.
+									Між елементами постійно однаковий простір
+								</div>
+							</div>
+							<div class="main__block">
+								<div class="main__object space-around">
+									<div class="main__item">1</div>
+									<div class="main__item">2</div>
+									<div class="main__item">3</div>
+								</div>
+								<div class="main__text">
+									<span class="properties">justify-content: </span><span class="value">space-around</span> - Flex-елементи розташовуються рівномірно
+									по основній осі. До кожного flex-елементу додається простір ліворуч і праворуч.
+								</div>
+							</div>
+							<div class="main__block">
+								<div class="main__object space-evenly">
+									<div class="main__item">1</div>
+									<div class="main__item">2</div>
+									<div class="main__item">3</div>
+								</div>
+								<div class="main__text">
+									<span class="properties">justify-content: </span><span class="value">space-evenly</span> - Flex-елементи розташовуються рівномірно по
+									основній осі з однаковим простором навколо них.
+								</div>
+							</div>
+						</div>
+						<div class="main__box align-items">
+							<div class="main__tittle">
+								<h2>Align-items</h2>
+								<p>Визначає вирівнювання вздовж поперечної осі (напрямок залежить від значення властивості flex-direction).</p>
+							</div>
+							<div class="main__block">
+								<div class="main__object stretch">
+									<div class="main__item">1</div>
+									<div class="main__item">2</div>
+									<div class="main__item">3</div>
+								</div>
+								<div class="main__text">
+									<span class="properties">align-items: </span><span class="value">stretch;</span> - Значення за промовчанням (не потрібно вказувати).
+									Flex-елементи розтягуються весь розмір поперечної осі flex-контейнера.
+								</div>
+							</div>
+							<div class="main__block">
+								<div class="main__object flex-start">
+									<div class="main__item">1</div>
+									<div class="main__item">2</div>
+									<div class="main__item">3</div>
+								</div>
+								<div class="main__text">
+									<span class="properties">align-items: </span><span class="value">flex-start;</span> - Flex-елементи притискаються до
+									початку поперечної осі.
+								</div>
+							</div>
+							<div class="main__block">
+								<div class="main__object flex-end">
+									<div class="main__item">1</div>
+									<div class="main__item">2</div>
+									<div class="main__item">3</div>
+								</div>
+								<div class="main__text">
+									<span class="properties">align-items: </span><span class="value">flex-end</span> - Flex-елементи притискаються вкінець поперечної осі.
+								</div>
+							</div>
+							<div class="main__block">
+								<div class="main__object center">
+									<div class="main__item">1</div>
+									<div class="main__item">2</div>
+									<div class="main__item">3</div>
+								</div>
+								<div class="main__text">
+									<span class="properties">align-items: </span><span class="value">center</span> - Flex-елементи по центру
+								</div>
+							</div>
+						</div>
+						<div class="main__box flex-direction">
+							<div class="main__tittle">
+								<h2>Flex-direction</h2>
+								<p>Встановлює основну вісь, таким чином визначає напрямок flex-елементів, розташованих у flex-контейнері.</p>
+							</div>
+							<div class="main__block">
+								<div class="main__object row">
+									<div class="main__item">1</div>
+									<div class="main__item">2</div>
+									<div class="main__item">3</div>
+								</div>
+								<div class="main__text">
+									<span class="properties">flex-direction: </span><span class="value">row;</span> - Значення за замовчуванням (не потрібно вказувати).
+									Основна вісь горизонтальна. Всі flex-елементи розташуються ліворуч по горизонталі.
+								</div>
+							</div>
+							<div class="main__block">
+								<div class="main__object row-reverse">
+									<div class="main__item">1</div>
+									<div class="main__item">2</div>
+									<div class="main__item">3</div>
+								</div>
+								<div class="main__text">
+									<span class="properties">flex-direction: </span><span class="value">row-reverse</span> - змінює напрям горизонтального вектору
+								</div>
+							</div>
+							<div class="main__block">
+								<div class="main__object column">
+									<div class="main__item">1</div>
+									<div class="main__item">2</div>
+									<div class="main__item">3</div>
+								</div>
+								<div class="main__text">
+									<span class="properties">flex-direction: </span><span class="value">column</span> - Flex-елементи притискаються вкінець поперечної осі.
+								</div>
+							</div>
+							<div class="main__block">
+								<div class="main__object column-reverse">
+									<div class="main__item">1</div>
+									<div class="main__item">2</div>
+									<div class="main__item">3</div>
+								</div>
+								<div class="main__text">
+									<span class="properties">flex-direction: </span><span class="value">column-reverse</span> - змінює головну вісь на вертикальну (знизу вверх)
+									другорядна зліва на право.
+								</div>
+							</div>
+						</div>
+						<div class="main__box">
+							<div class="main__tittle">
+								<h2>Gap</h2>
+								<p>Проміжок між FLEX-елементами. Не залежить від flex-direction</p>
+							</div>
+							<div class="main__block">
+								<div class="main__object gap-daughterly">
+									<div class="main__item">1</div>
+									<div class="main__item">2</div>
+									<div class="main__item">3</div>
+									<div class="main__item">4</div>
+									<div class="main__item">5</div>
+									<div class="main__item">6</div>
+								</div>
+								<div class="main__text">
+									<span class="properties">gap: </span><span class="value">2px;</span>
+								</div>
+						</div>
+					</div>
+						<div class="main__box align-self">
+							<div class="main__tittle">
+								<h2>Align-self</h2>
+								<p>Перевизначає для конкретного flex-елемента вирівнювання вздовж поперечної осі (напрямок залежить від значення якості flex-direction).</p>
+							</div>
+							<div class="main__block">
+								<div class="main__object flex-start">
+									<div class="main__item">1</div>
+									<div class="main__item">2</div>
+									<div class="main__item">3</div>
+								</div>
+								<div class="main__text">
+									<span class="properties">align-self: </span><span class="value">flex-start;</span> - Flex-елементи притискаються до початку поперечної осі.
+								</div>
+							</div>
+							<div class="main__block">
+								<div class="main__object flex-end">
+									<div class="main__item">1</div>
+									<div class="main__item">2</div>
+									<div class="main__item">3</div>
+								</div>
+								<div class="main__text">
+									<span class="properties">align-self: </span><span class="value">flex-end</span> - Flex-елементи притискаються до кінця поперечної осі.
+								</div>
+							</div>
+							<div class="main__block">
+								<div class="main__object center">
+									<div class="main__item">1</div>
+									<div class="main__item">2</div>
+									<div class="main__item">3</div>
+								</div>
+								<div class="main__text">
+									<span class="properties">flex-direction: </span><span class="value">center</span> - Flex-елементи притискаються до центру поперечної осі.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
