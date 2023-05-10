@@ -1,0 +1,93 @@
+@import url("reset.css");
+@import url("header.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.6;
+}
+.main {
+	margin-top: 50px;
+}
+[class*="__container"] {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.main__tittle {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 40px;
+	margin-bottom: 53px;
+}
+.main__tittle h1 {
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.4;
+}
+.main__tittle p {
+	max-width: 518px;
+	text-align: center;
+}
+.main__img-tittle {
+	width: 100%;
+	max-height: 513px;
+	margin-bottom: 100px;
+}
+.main__text-box {
+	display: flex;
+	flex-direction: row;
+	column-gap: 32px;
+	margin-bottom: 82px;
+}
+.main__text-box h2 {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.4;
+	margin-bottom: 24px;
+	color: #333333;
+}
+.main__text-box p {
+	color: #9C9C9C;
+	transition: all 0.4s;
+}
+.main__text-inf a p:hover {
+	color: #333333;
+}
+.main__text-project {
+	display: flex;
+	flex-direction: column;
+	max-width: 590px;
+}
+.main__text-inf {
+	display: flex;
+	flex-direction: row;
+	column-gap: 80px;
+	margin-top: 60px;
+}
+.main__text-process {
+	display: flex;
+	flex-direction: column;
+	max-width: 590px;
+}
+.main__text-process > *:not(:first-child) {
+	margin-bottom: 30px;
+}
+.main__gallery {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 32px;
+	margin-bottom: 50px;
+}

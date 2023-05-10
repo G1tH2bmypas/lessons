@@ -1,0 +1,93 @@
+@import url("reset.css");
+@import url("header.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.6;
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+[class*="__container"] {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.main__box {
+	display: flex;
+	flex-direction: column;
+	margin-top: 100px;
+}
+.achievement__tittle {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.achievement__tittle h2 {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	min-width: 120px;
+	padding-right: 26px;
+}
+.line {
+	width: 464px;
+	height: 2px;
+	background: black;
+}
+.achievement__body {
+	margin-bottom: 50px;
+}
+.achievement__card {
+	display: flex;
+	flex-direction: column;
+	row-gap: 40px;
+}
+.card__box {
+	display: flex;
+	flex-direction: row;
+	column-gap: 120px;
+	align-items: center;
+}
+.card__image {
+	max-width: 746px;
+	max-height: 365px;
+	overflow: hidden;
+}
+.card__image img {
+	width: 100%;
+	transition: all 0.5s ;
+}
+.card__image img:hover {
+	transform: scale(1.1);
+}
+.card__text-box {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	width: 334px;
+	min-height: 170px;
+ }
+.card__tittle {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.4;
+	color: #333333;
+	transition: all 0.4s;
+}
+.card__tittle:hover {
+	color: #9C9C9C;
+}
+.card__text {
+	color: #9C9C9C;
+}
+
