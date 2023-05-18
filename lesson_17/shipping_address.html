@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/shipping_address.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>lesson_17</title>
+</head>
+	<body>
+		<div class="wrapper">
+		<header class="wrapper__header header">
+			<div class="header">
+				<div class="header__container">
+					<div class="header__menu">
+						<ul class="header__menu-list">
+							<li><a href="achievement.html">Achievement</a></li>
+							<li><a href="minimalist_room.html">Minimalist Room</a></li>
+							<li><a href="checkout.html">Checkout</a></li>
+							<li><a href="shipping_address.html">Shipping Address</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="wrapper__main main">
+			<div class="main">
+				<div class="main__container">
+					<div class="main__box">
+						<div class="main__tittle">
+							<h3>Shipping Address</h3>
+						</div>
+						<form class="form__login" method="GET" enctype="multipart/form-data" action="#">
+							<div class="form__box">
+								<label for="email">Email Address <span>*</span></label>
+								<div class="form__login-item">
+									<input type="email" id="email" name="email" placeholder="roni_cost@example.com" autocomplete="off" required tabindex="1">
+								</div>
+							</div>
+							<div class="form__box">
+								<label for="pass">Password</label>
+								<div class="form__login-item">
+									<input type="password" id="pass" name="password" placeholder="******************" autocomplete="off" required tabindex="2">
+								</div>
+							</div>
+							<div class="form__box">
+								<label for="code">Zip/Postal Code</label>
+								<div class="form__login-item">
+									<input type="number" id="code" name="code" placeholder="" autocomplete="off" tabindex="3">
+								</div>
+							</div>
+							<div class="form__login-comment">
+								<a href="#">You already have an account with us. Sign in or continue as guest.</a>
+							</div>
+							<div class="form__login-link">
+								<button>login</button>
+								<a class="form__login-query" href="#">Forgot Your Password?</a>
+							</div>
+						</form>
+						<form class="form__data" method="GET" enctype="multipart/form-data" action="#">
+							<div class="form__box">
+								<label for="fname">First Name <span>*</span></label>
+								<div class="form__login-item">
+									<input type="text" id="fname" name="firstname" placeholder="" autocomplete="off" required tabindex="4">
+								</div>
+							</div>
+							<div class="form__box">
+								<label for="lname">Last Name <span>*</span></label>
+								<div class="form__login-item">
+									<input type="text" id="lname" name="lastname" placeholder="" autocomplete="off" required tabindex="5">
+								</div>
+							</div>
+							<div class="form__box">
+								<label for="company">Company</label>
+								<div class="form__login-item">
+									<input type="text" id="company" name="company" placeholder="" autocomplete="off" tabindex="6">
+								</div>
+							</div>
+							<div class="form__data-street">
+								<div class="form__box">
+									<label for="street">Street Address <span>*</span></label>
+									<div class="form__login-item">
+										<input type="text" id="street" name="street" placeholder="" autocomplete="off" required tabindex="7">
+									</div>
+								</div>
+								<div class="form__box">
+									<label for="street-1"></label>
+									<div class="form__login-item">
+										<input type="text" id="street-1" name="street-1" placeholder="" autocomplete="off" tabindex="8">
+									</div>
+								</div>
+								<div class="form__box">
+									<label for="street-2"></label>
+									<div class="form__login-item">
+										<input type="text" id="street-2" name="street-2" placeholder="" autocomplete="off" tabindex="9">
+									</div>
+								</div>
+							</div>
+							<div class="form__box">
+								<label for="country">Country <span>*</span></label>
+								<div class="form__login-item">
+									<input type="text" id="country" name="country" placeholder="" autocomplete="off" required tabindex="10">
+								</div>
+							</div>
+							<div class="form__box form__select-box">
+								<label for="state">State/Province <span>*</span></label>
+								<div class="form__login-item">
+									<select id="state" name="state" autocomplete="off" required tabindex="11">
+										<option value="">Please select a region, state or province</option>
+										<option value="">State of Idaho</option>
+										<option value="">State of Iowa</option>
+										<option value="">State of Alabama</option>
+									</select>
+								</div>
+							</div>
+							<div class="form__methods-tittle">
+								<h3>Shipping Address</h3>
+							</div>
+							<div class="form__radio radio__line">
+								<div class="form__radio-box">
+									<input checked class="form__input form__input_radio" id="price" autocomplete="off" value="cat" name="pet" type="radio" tabindex="12">
+									<label class="form__radio-label" for="price">$5.00</label>
+								</div>
+								<p>Fixed</p>
+								<p>Flat Rate</p>
+							</div>
+							<div class="form__radio">
+								<div class="form__radio-box">
+									<input class="form__input form__input_radio" id="price-01" autocomplete="off" value="cat" name="pet" type="radio" tabindex="13">
+									<label class="form__radio-label" for="price-01">$10.00</label>
+								</div>
+								<p>Table Rate</p>
+								<p>Best Way</p>
+							</div>
+							<div class="from__footer">
+								<button>next</button>
+								<a href="#">Back</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
